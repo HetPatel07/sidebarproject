@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    
+    
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    font-family: verdana;
+    overflow: hidden;
+    z-index: -22;
+}
+
+header {
+
+    overflow: auto;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 30px;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    overflow: auto;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    padding: 10px 30px;
+    transition: .3s all;
+    color: #fff;
+}
+
+nav ul li:hover {
+    text-align: center;
+    background-color: #fff;
+    transition: .3s all;
+    color: #111;
+}
+
+nav ul li:hover a {
+    transition: .3s all;
+    color: #111;
+}
+
+ul li:hover ul li {
+    display: block;
+
+}
+
+ul li ul li {
+    float: none;
+    padding: 40px 0 20px 0;
+    color: #111;
+    display: none;
+}
+
+ul li a {
+    transition: .3s all;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebarMain {
+    z-index: 1;
+    overflow: auto;
+    /*    position: relative;*/
+
+    float: right;
+    /* flex-direction: row; */
+    /* display: flex; */
+}
+
+.sidebarMain:hover {
+    height: 100vh;
+    width: 25%;
+}
+
+.sidebbar {
+    /* background-color: red; */
+    overflow: auto;
+    position: relative;
+    /* right: 0px; */
+    /* transform: translateX(0); */
+    margin-right: 20px;
+    right: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    float: right;
+    color: #fff;
+    z-index: 11;
+}
+
+/*
+
+.sidebbar:hover {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: visible;
+}
+*/
+
+.sidebarMain:hover .sidebarcontent {
+
+    display: block;
+
+    position: absolute;
+}
+
+/*
+.sidebbar:hover .fas {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+*/
+
+.sidebarcontent {
+    display: none;
+    z-index: 1;
+    width: 100%;
+    background: #111;
+    height: 100vh;
+    /* float: left; */
+}
+
+.sidebarcontent ul {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebarcontent ul li {
+    padding: 20px;
+    border-bottom: 1px solid #f3f3f3;
+    list-style: none;
+    color: #fff;
+}
+
+.sidebarcontent ul li a:hover {
+    padding: 20px;
+    border: 0;
+    list-style: none;
+}
+
+.sidebarcontent ul li:hover {
+    padding:20px 0;
+} 
+.sidebarcontent ul li:hover p{
+    padding:0 20px;
+} 
+.sidebarcontent ul li ul li:hover p{
+    padding:0 20px;
+} 
+
+
+.sidebarcontent ul li ul {
+    padding: 0;
+    background-color: #fff;
+    color: #111;
+}
+
+.sidebarcontent ul li ul li {
+    color: #111;
+    border-bottom: 1px solid #333;
+}
